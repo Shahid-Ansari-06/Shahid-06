@@ -84,59 +84,59 @@
 
          <div id="contact-me" class="contact"> <h3> Contact Me </h3></div>
          <form id="form">
-             <div class="field">
-               <label for="name">Name</label>
-               <input type="text" name="name" id="name">
-             </div>
-             <div class="field">
-               <label for="email">Email</label>
-               <input type="text" name="email" id="email">
-             </div>
-             <div class="field">
-               <label for="subject">Subject</label>
-               <input type="text" name="subject" id="subject">
-             </div>
-             <div class="field">
-               <label for="message">Message</label>
-               <input type="text" name="message" id="message">
-             </div>
-             
-           
-             <input type="submit" id="button" value="Send Email" >
-           </form>
-           
-           <script type="text/javascript"
-             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-           
-           <script type="text/javascript">
-             emailjs.init('I7t0XGSEV_tPENqNY')
-         
-             const btn = document.getElementById('button');
-         
-         document.getElementById('form')
-          .addEventListener('submit', function(event) {
-            event.preventDefault();
-         
-            btn.value = 'Sending...';
-         
-            const serviceID = 'default_service';
-            const templateID = 'template_bz79ste';
-         
-            emailjs.sendForm(serviceID, templateID, this)
-             .then(() => {
-               btn.value = 'Send Email';
-               alert('Sent!');
-             }, (err) => {
-               btn.value = 'Send Email';
-               alert(JSON.stringify(err));
-             });
-         });
-    
-         document.getElementById("button").addEventListener("click", function() {
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <input type="text" name="message" id="message">
+          </div>
+                 
+          <input type="submit" id="button" value="Send Email" >
+        </form>
+        
+        <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        
+        <script type="text/javascript">
+          emailjs.init('I7t0XGSEV_tPENqNY')
+        </script>
+<script>
+  const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_bz79ste';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+
+document.getElementById("button").addEventListener("click", function() {
         document.getElementById("form").reset(); 
     });
     
-           </script>
+</script>
 
      <div class="Greeting-Text">
         <div class="container">
