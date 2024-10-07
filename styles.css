@@ -395,6 +395,7 @@ h3{
                     border: 1px solid #ffffff;
                     font-size: 16px;
                     box-sizing: border-box;
+                    padding-left: 7px;
                   }
                   
                   input[type="submit"] {
@@ -414,6 +415,8 @@ h3{
                      width:100%;
                      height:50px;
                      border-radius: 5px;
+                     padding-left: 7px;
+                     padding-top: 5px;
                   }
                  
                   @media (max-width: 601px) {
