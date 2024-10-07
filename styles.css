@@ -385,7 +385,7 @@ h3{
                     display: block;
                     margin-bottom: 3px;
                     font-weight: bold;
-                    color: #333;
+                    color: black;
                   }
                   
                   input[type="text"], input[type="submit"] {
@@ -404,12 +404,17 @@ h3{
                     cursor: pointer;
                     font-size: 18px;
                     margin-top: 7px;
+                    width: 27%;
                   }
                   
                   input[type="submit"]:hover {
                     background-color: #12bc1a;
                   }
-                  
+                  #message{
+                     width:100%;
+                     height:50px;
+                     border-radius: 5px;
+                  }
                  
                   @media (max-width: 601px) {
                     form {
@@ -491,6 +496,12 @@ h3{
                 form{
                     background-color:#a8a7a769 ;
                 }
+                #message{
+                    border-color: black;
+                }
+                input[type="text"]{
+                    border-color: black;
+                }
                 }
                 
                 @media (prefers-color-scheme: dark) {
@@ -514,6 +525,11 @@ h3{
                 }
                    .explore a{
                     background-color: #bc1212;
+                   }
+
+                   #message{
+                    background-color: #676767;
+                    border-color: white;
                    }
                 
                 .modal-content {
