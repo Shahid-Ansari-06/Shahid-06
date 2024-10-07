@@ -416,7 +416,7 @@ h3{
                      height:50px;
                      border-radius: 5px;
                      padding-left: 7px;
-                     padding-top: 5px;
+                     padding-top: 3px;
                   }
                  
                   @media (max-width: 601px) {
