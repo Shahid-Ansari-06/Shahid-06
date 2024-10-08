@@ -414,9 +414,11 @@ h3{
                     color: white;
                     border: none;
                     cursor: pointer;
-                    margin-top: 7px;
-                    width: 21%;
                     font-weight: bold;
+                    width: 65px;
+                    padding: 1px 7px;
+                    align-items: center;
+                    justify-content: center;
                   }
 
                   #button{
