@@ -416,6 +416,7 @@ h3{
                     cursor: pointer;
                     font-weight: bold;
                     width: 65px;
+                    margin-top: 3px;
                     padding: 1px 7px;
                     align-items: center;
                     justify-content: center;
