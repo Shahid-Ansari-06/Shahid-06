@@ -414,10 +414,13 @@ h3{
                     color: white;
                     border: none;
                     cursor: pointer;
-                    font-size: 18px;
                     margin-top: 7px;
-                    width: 15%;
+                    width: 21%;
                     font-weight: bold;
+                  }
+
+                  #button{
+                    font-size: 21px;
                   }
                   
                   input[type="submit"]:hover {
