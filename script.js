@@ -137,3 +137,35 @@ function typeWriter(skillIndex) {
 for (let i = 0; i < skills.length; i++) {
     typeWriter(i);
 }
+
+// For chart data
+
+const ctx = document.getElementById('myPieChart').getContext('2d');
+const myPieChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+        labels: ['Web Development', 'Video Editing', 'Thumbnail Creation'],
+        datasets: [{
+            data: [75, 150, 100],
+            backgroundColor: [
+                '#3498db', 
+                '#e74c3c', 
+                '#f1c40f' 
+            ],
+            borderWidth: 1,
+            hoverOffset: 4 
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    color: '#fff', 
+                }
+            }
+        }
+    }
+});
