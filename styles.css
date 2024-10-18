@@ -576,3 +576,83 @@ h3{
                 }
                 }
   
+
+                body {
+                    margin: 0;
+                    font-family: 'Arial', sans-serif;
+                    background-color: #f4f4f4; 
+                }
+                footer {
+                    background-color: #2C3E50;
+                    color: white;
+                    text-align: center;
+                    padding: 40px 20px;
+                    position: relative;
+                    border-top: 5px solid #3498db; 
+                }
+                
+                .social-icons {
+                    margin-top: 20px;
+                }
+                .social-icons a {
+                    margin: 0 15px;
+                    font-size: 26px;
+                    text-decoration: none;
+                    color: inherit;
+                    transition: transform 0.3s ease;
+                }
+                .social-icons a:hover {
+                    transform: scale(1.3); 
+                }
+            
+                .social-icons a.youtube {
+                    color: #FF0000;
+                }
+                .social-icons a.telegram {
+                    color: #0088cc; 
+                }
+                .social-icons a.instagram {
+                    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                .social-icons a.github {
+                    color: #000; 
+                }
+                footer hr {
+                    margin: 30px auto;
+                    width: 80%;
+                    border: 0;
+                    border-top: 1px solid #34495E;
+                }
+                footer .credits {
+                    font-size: 14px;
+                    opacity: 0.8; 
+                }
+            
+                .chart-container {
+                    position: relative;
+                    margin: auto;
+                    max-width: 400px;
+                    height: 400px; 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 25px;
+                }
+                canvas {
+                    border-radius: 15px; 
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+                }
+                @media (max-width: 600px) {
+                    footer h2 {
+                        font-size: 24px;
+                    }
+                    .social-icons a {
+                        font-size: 20px; 
+                    }
+                    .chart-container {
+                        max-width: 125%;
+                        height: 300px; 
+                    }
+                }
