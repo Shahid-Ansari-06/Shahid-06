@@ -108,10 +108,10 @@ setTimeout(function() {
 //For typing skills
 
 const skills = [
-    { text: "HTML, CSS", element: document.querySelector(".typewriter-text") },
-    { text: "JavaScript", element: document.querySelector(".typewriter-text1") },
-    { text: "Python", element: document.querySelector(".typewriter-text2") },
-    { text: "Artificial Intelligence", element: document.querySelector(".typewriter-text3") }
+    { text: "HTML, CSS, Java Script", element: document.querySelector(".typewriter-text") },
+    { text: "Video & Photo Editing", element: document.querySelector(".typewriter-text1") },
+    { text: "Thumbnail Creation", element: document.querySelector(".typewriter-text2") },
+    { text: "Python, Artificial Intelligence", element: document.querySelector(".typewriter-text3") }
 ];
 
 const typeSpeed = 125;
