@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="Page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahid 06</title>
+    <link rel="shortcut icon" type="jpg" href="Shahid 06.jpg">
+    <link rel="stylesheet" href="registration_styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form id="registrationForm">
+            <label for="name">First & Last Name:  &nbsp; <span class="star-mark"> * </span></label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email ID: &nbsp; <span class="star-mark"> * </span></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Mobile No.:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="---Not Compulsory---">
+            
+            <button type="submit">Register</button>
+        </form>
+        <p id="successMessage" class="hidden"></p>
+
+    <div class="container1">
+        <h2>Developer Login</h2>
+        <form id="numberForm">
+            <label for="userNumber">Enter Registration No.:</label>
+            <input type="text" id="userNumber" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="notification" id="notification"></div> 
+        <div id="notice" class="container2">
+            <div class="icon">!</div>
+            <div class="text">If you have already registered so you can directly login for test.</div>
+        </div> </div> </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("UpZYMgh2noUV6QyZN");
+    </script>
+    <script>
+        document.getElementById('numberForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    const userNumber = document.getElementById('userNumber').value.trim(); 
+    const notification = document.getElementById('notification');
+
+    notification.textContent = '';
+
+    const validRegistrationNumber = localStorage.getItem("registrationNumber");
+
+    if (userNumber === validRegistrationNumber) {
+  
+        window.location.href = 'test.html';
+    } else {
+
+        notification.textContent = 'User not found. Please enter the correct registration no.';
+    }
+
+    document.getElementById("numberForm").reset();
+
+});
+ </script>
+    <script src="registration_script.js"></script>
+</body>
+</html>
