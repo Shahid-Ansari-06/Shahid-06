@@ -742,7 +742,7 @@ h3{
                   .sparkle2:nth-child(10) { top: 55%; left: 80%; animation-delay: 0.5s; }
                   
                   @keyframes zoomIn {
-                    from { transform: scale(1); }
+                    from { transform: scale(0.7); }
                     to { transform: scale(1.1); }
                   }
                 
