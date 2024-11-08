@@ -697,10 +697,10 @@ h3{
                   }
                   @keyframes slideUp {
                     0% {
-                        bottom: -400px;
+                        bottom: -450px;
                     }
                     100% {
-                        bottom:-375px;
+                        bottom:-425px;
                     }
                   }
                 .profile-photo {
