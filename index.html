@@ -12,6 +12,24 @@
     <title>Shahid 06</title>
 </head>
 <body>
+    <div id="splash" class="container3">
+        <h1 id="name" class="h1-name">Shahid 06</h1>
+        <div class="profile-photo">
+         <img src="shahid.jpg" alt="Profile Photo"> 
+         <div class="sparkles">
+           <div class="sparkle"></div>
+           <div class="sparkle"></div>
+           <div class="sparkle"></div>
+           <div class="sparkle"></div>
+           <div class="sparkle1"></div>
+           <div class="sparkle1"></div>
+           <div class="sparkle1"></div>
+           <div class="sparkle1"></div>
+           <div class="sparkle2"></div>
+           <div class="sparkle2"></div>
+         </div>
+       </div></div>
+       <div id="main-content" class="main-content">
   <div class="Starflix">
     <nav class="Starflix-navbar">
         <div class="navbar-left">
@@ -55,7 +73,6 @@
    <img src="Project1.png">
   </div>
    </section>
-  
    <div id="skill" class="skills"><h3>Skills</h3></div>
    <section id="skills" class="container1">
      <ul>
@@ -76,12 +93,12 @@
       <h3> Our Team Members </h3></div>
           <section class="developer">
   <div class="dev">
-      <img src="Backend Developer.avif">
+      <img src="shahid.jpg">
        <h5> Shahid Ansari </h5>
        </div>
        <div class="dev">
-        <img src="Frontend Developer.avif">
-         <h5> Prashant Pandey </h5>
+        <img src="shahid.jpg">
+         <h5> Shahid 06 </h5>
          </div> </section>
 
          <div id="contact-me" class="contact"> <h3> Contact Me </h3></div>
@@ -191,8 +208,14 @@
               checkSlide(); 
           });
           </script>
+          <script> 
+            setTimeout(() => {
+           document.getElementById('splash').style.display = 'none';  
+           document.getElementById('main-content').style.display = 'block';  
+         }, 2500);
+       </script>
     <script src="script.js"></script>
-    
+    </div>
 </body>
 </html>
 
