@@ -45,7 +45,7 @@ body {
 }
 
 .open-app-btn {
-    padding: 4px 10px;
+    padding: 5px 10px;
     border: none;
     border-radius: 25px;
     font-size: 17.5px;
@@ -258,7 +258,6 @@ h3{
             width: fit-content;
             overflow: hidden;
             font-weight: bold;
-            z-index: 1000;
             font-size: 20px;
         }
         .Greeting-Text{
@@ -394,8 +393,17 @@ h3{
                     font-weight: bold;
                     color: black;
                   }
-                  
-                  input[type="text"], input[type="submit"] {
+                  input[type="text"]:focus{
+                    border-color: #b700ff;
+                    box-shadow: 0 0 5px rgba(183, 0, 255, 0.5); 
+                    outline: none;
+                }
+                #message:focus{
+                    border-color: #b700ff;
+                    box-shadow: 0 0 5px rgba(183, 0, 255, 0.5); 
+                    outline: none;
+                }
+                  input[type="text"]{
                     width: 100%;
                     padding: 7px;
                     border-radius: 4px;
@@ -404,7 +412,11 @@ h3{
                     box-sizing: border-box;
                     padding-left: 7px;
                   }
-
+                  input[type="email"]:focus{
+                    border-color: #b700ff;
+                    box-shadow: 0 0 5px rgba(183, 0, 255, 0.5); 
+                    outline: none;
+                }
                   input[type="email"]{
                     width: 100%;
                     height:30px;
@@ -441,8 +453,8 @@ h3{
                       padding: 15px;
                     }
                   
-                    input[type="text"], input[type="submit"] {
-                      font-size: 14px;
+                    input[type="text"]{
+                      font-size: 15px;
                     }
                   }
                   
@@ -451,8 +463,8 @@ h3{
                       padding: 10px;
                     }
                   
-                    input[type="text"], input[type="submit"] {
-                      font-size: 12px;
+                    input[type="text"]{
+                      font-size: 15px;
                     }
                   }
                   
@@ -660,3 +672,121 @@ h3{
                         height: 362.5px;
                     }
                 }
+                 .container3 {
+                    position: fixed;
+                    top: 35%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  }
+                  #name {
+                    position: relative;
+                    bottom: -100px;
+                    color: #ffffff;
+                    animation: slideUp 2s ease-out forwards;
+                    z-index: 1000;
+                    text-align:center;
+                    text-shadow: 
+                    0 0 5px #0ff, 
+                    0 0 10px #0ff,
+                    0 0 15px #0ff,
+                    0 0 20px #0ff,
+                    0 0 30px #0ff,
+                    0 0 40px #0ff,
+                    0 0 50px #0ff;
+                  }
+                  @keyframes slideUp {
+                    0% {
+                        bottom: -350px;
+                    }
+                    100% {
+                        bottom:-295px;
+                    }
+                  }
+                .profile-photo {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    border: 5px solid #0ff;
+                    box-shadow: 0 0 10px #0ff, 0 0 5px #0ff, 0 0 25px #0ff, 0 0 35px #0ff;
+                    animation: zoomIn 3s ease-in-out infinite alternate;
+                  }
+                
+                  .profile-photo img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
+                
+                  .sparkles {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    overflow: hidden;
+                  }
+                
+                  .sparkle {
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background: radial-gradient(circle, rgb(0, 255, 255) 0%, rgba(0, 255, 255, 0) 70%);
+                    border-radius: 50%;
+                    animation: sparkle 2s infinite ease-in-out;
+                  }
+                  .sparkle1 {
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background: radial-gradient(circle, rgb(255, 0, 0) 0%, rgba(0, 255, 255, 0) 70%);
+                    border-radius: 50%;
+                    animation: sparkle 2s infinite ease-in-out;
+                  }
+                  .sparkle2 {
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    background: radial-gradient(circle, rgb(30, 255, 0) 0%, rgba(0, 255, 255, 0) 70%);
+                    border-radius: 50%;
+                    animation: sparkle 2s infinite ease-in-out;
+                  }                
+                
+                  .sparkle:nth-child(1) { top: 20%; left: 75%; animation-delay: 0s; }
+                  .sparkle:nth-child(2) { top: 20%; left: 30%; animation-delay: 1s; }
+                  .sparkle:nth-child(3) { top: 40%; left: 75%; animation-delay: 0.5s; }
+                  .sparkle:nth-child(4) { top: 40%; left: 15%; animation-delay: 0s; }
+                  .sparkle1:nth-child(5) { top: 60%; left: 25%; animation-delay: 0s; }
+                  .sparkle1:nth-child(6) { top: 72.5%; left: 75%; animation-delay: 0s; }
+                  .sparkle1:nth-child(7) { top: 82.5%; left: 55%; animation-delay: 1.5s; }
+                  .sparkle1:nth-child(8) { top: 85%; left: 85%; animation-delay: 0s; }
+                  .sparkle2:nth-child(9) { top: 75%; left: 20%; animation-delay: 0s; }
+                  .sparkle2:nth-child(10) { top: 55%; left: 80%; animation-delay: 0.5s; }
+                  
+                  @keyframes zoomIn {
+                    from { transform: scale(1); }
+                    to { transform: scale(1.1); }
+                  }
+                
+                  @keyframes sparkle {
+                    0% { transform: scale(0.5); opacity: 0; }
+                    50% { transform: scale(1.5); opacity: 1; }
+                    100% { transform: scale(0.5); opacity: 0; }
+                  }
+                  .main-content {
+                    display: none;
+                  }                
+
+                  @media (prefers-color-scheme: light) {
+                    #name {
+                        text-shadow: 
+                        0 0 5px #0ff, 
+                        0 0 10px #0ff,
+                        0 0 15px #0ff,
+                        0 0 20px #0ff,
+                        0 0 30px #0ff,
+                        0 0 40px #0ff,
+                        0 0 50px #0ff;
+                      }
+                    }
