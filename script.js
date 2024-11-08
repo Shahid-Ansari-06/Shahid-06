@@ -169,3 +169,45 @@ const myPieChart = new Chart(ctx, {
         }
     }
 });
+
+
+
+
+const stars = document.querySelectorAll('.star');
+let ratingValue = 0;
+
+stars.forEach(star => {
+star.addEventListener('click', () => {
+ratingValue = star.getAttribute('data-value');
+updateStars(ratingValue);
+sendRatingAfterDelay(ratingValue);  
+});
+});
+
+function updateStars(rating) {
+stars.forEach(star => {
+if (star.getAttribute('data-value') <= rating) {
+  star.classList.add('selected');
+} else {
+  star.classList.remove('selected');
+}
+});
+}
+
+function sendRatingAfterDelay(rating) {
+setTimeout(() => {
+const templateParams = {
+  rating: '★'.repeat(rating), 
+};
+
+emailjs.send('service_c7i18u6', 'template_slplyw2', templateParams)
+  .then((response) => {
+    console.log('Feedback sent successfully', response);
+   
+    ratingValue = 0;
+    updateStars(0);
+  }, (error) => {
+    console.error('Error sending feedback:', error);
+  });
+}, 1500); 
+}
