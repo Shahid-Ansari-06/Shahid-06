@@ -674,7 +674,7 @@ h3{
                 }
                  .container3 {
                     position: fixed;
-                    top: 35%;
+                    top: 32.5%;
                     left: 50%;
                     transform: translate(-50%, -50%);
                   }
@@ -697,10 +697,10 @@ h3{
                   }
                   @keyframes slideUp {
                     0% {
-                        bottom: -350px;
+                        bottom: -400px;
                     }
                     100% {
-                        bottom:-325px;
+                        bottom:-375px;
                     }
                   }
                 .profile-photo {
