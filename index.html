@@ -29,43 +29,6 @@
          </div>
        </div></div>
 
-       <div id="feedback-modal" class="modal-1">
-       <div class="feedback-container">
-        <span id="close-btn1" class="close-btn1">&times;</span>
-            <div class="header-1">
-            <h1>Rate Us</h1>
-            <div class="rating">
-              <div class="stars" id="stars">
-                <span class="star" data-value="1">&#9733;</span>
-                <span class="star" data-value="2">&#9733;</span>
-                <span class="star" data-value="3">&#9733;</span>
-                <span class="star" data-value="4">&#9733;</span>
-                <span class="star" data-value="5">&#9733;</span>
-              </div> </div> </div> </div> </div>
-<script>
-  window.onload = function() {
-    setTimeout(function() {
-        document.getElementById('feedback-modal').style.display = 'block';
-
-        setTimeout(function() {
-            document.getElementById('feedback-modal').style.display = 'none';
-        }, 10000);
-
-    }, 15000);
-};
-
-document.getElementById('close-btn1').onclick = function() {
-    document.getElementById('feedback-modal').style.display = 'none';
-};
-
-window.onclick = function(event) {
-    if (event.target === document.getElementById('feedback-modal')) {
-        document.getElementById('feedback-modal').style.display = 'none';
-    }
-};
-
-    </script> 
-
        <div id="main-content" class="main-content">
   <div class="Starflix">
     <nav class="Starflix-navbar">
@@ -251,12 +214,18 @@ window.onclick = function(event) {
            document.getElementById('main-content').style.display = 'block';  
          }, 2500);
        </script>
-       <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser/dist/email.min.js"></script>
-      <script> emailjs.init("UpZYMgh2noUV6QyZN"); </script>
-    <script src="script.js"></script>
-    </div>
-</body>
-</html>
-
-
-               
+       <script src="script.js"></script>
+       <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/6738c5462480f5b4f59f084c/1icqs57cd';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+       </div>
+    </body>
+    </html>    
